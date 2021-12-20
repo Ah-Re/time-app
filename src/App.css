@@ -1,0 +1,151 @@
+html, body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 200px;
+  
+}
+
+h2 {
+  font-size: 62px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+
+}
+
+
+
+@media (max-width: 750px) {
+
+  
+
+  h1 {
+    font-size: 110px;
+    text-align: center;
+    
+  }
+
+  /* Quote */
+
+  .quote {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .quote-text {
+    line-height: 28px;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .refresh-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  /* Middle */
+
+  .middle {
+    padding-left: 2rem;
+    
+  }
+
+  .middle h1 {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .middle h3 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+  }
+
+  .middle h4 {
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  /* .middle img {
+    margin-right: 1.5rem;
+  } */
+  .middle button {
+    cursor: pointer;
+  }
+
+  /* More Info */
+  .more-info {
+    background-color: rgba(255,255,255,.9);
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+  }
+
+  .info-piece {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .info-piece h6 {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+   
+    
+  }
+
+
+  .info-piece h2 {
+    display: inline-block;
+    font-size: 24px;
+    padding-right: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    
+  }
+
+  
+  
+}
