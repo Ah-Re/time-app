@@ -146,7 +146,8 @@ let windowSize = useWindowWidth();
     rgba(0, 0, 0, 0.6)), url(${imageUrl})`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center'
+      backgroundPosition: 'center',
+      
   }
 
 
@@ -160,7 +161,15 @@ let windowSize = useWindowWidth();
     greeting = 'Good evening';
   }
 
-  
+  const middlePaddingWithMoreInfo = {
+    paddingTop: "8rem",
+    paddingBottom: windowSize > 750 ? "20rem" : "10rem"
+  };
+
+  const middlePaddingWithoutMoreInfo = {
+    paddingTop: "3rem",
+    paddingBottom: "10rem"
+  };
 
   
   return (
@@ -176,14 +185,14 @@ let windowSize = useWindowWidth();
     </div>
 }
 
-<div className="middle" style={!more ? {paddingTop: "8rem", paddingBottom: "10rem"} : {paddingTop: "3rem", paddingBottom: "3rem"}}>
+<div className="middle" style={!more ? middlePaddingWithMoreInfo : middlePaddingWithoutMoreInfo}>
   <div>
     <img style={{marginRight: "1rem"}} src={icon} alt="icon"/> 
-    <h4>{greeting}</h4>
+    <h4>{greeting}{windowSize > 750 ? ", it's currently" : null}</h4>
     </div>
       <h1>{timeData.time}</h1>
       <h4>{timeData.abbreviation}</h4>
-      {/* , it's currently */}
+      
 
   <h3>in {locationData.city}, {locationData.country_code}</h3>
 
