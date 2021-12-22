@@ -74,6 +74,7 @@ let windowSize = useWindowWidth();
     
   
 
+  
   useEffect(() => {
     const getData = async () => {
       const res = await axios.get('https://geolocation-db.com/json/' + apiKey);
@@ -112,7 +113,7 @@ let windowSize = useWindowWidth();
   let icon;
 
   if (windowSize > 1000) {
-    if (hour > 5 && hour <= 18) {
+    if (hour > 5 && hour < 18) {
       imageUrl = DayDesktop
       icon = SunIcon;
     } else {
@@ -122,7 +123,7 @@ let windowSize = useWindowWidth();
     
   }
   else if (windowSize > 750 && windowSize < 1000) {
-    if (hour > 5 && hour <= 18) {
+    if (hour > 5 && hour < 18) {
       imageUrl = DayTablet;
       icon = SunIcon;
     } else {
@@ -132,7 +133,7 @@ let windowSize = useWindowWidth();
     
     
   } else {
-    if (hour > 5 && hour <= 18) {
+    if (hour > 5 && hour < 18) {
       imageUrl = DayDesktop;
       icon = SunIcon;
     } else {
@@ -210,12 +211,9 @@ let windowSize = useWindowWidth();
 </div>
   
 
-  
 
 
-
-
- {more && <div className="more-info">
+ {more && <div style={greeting === "Good evening" ? {backgroundColor: "rgba(0, 0, 0, 0.8)", color: "white"} : null}className="more-info">
     
   <div className="info-piece">
   <h6>Current timezone</h6>
