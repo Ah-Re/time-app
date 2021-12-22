@@ -91,6 +91,10 @@ p {
   margin-right: 3rem;
 }
 
+.middle button:hover {
+  filter: brightness(220%);
+}
+
 .middle h3 {
   letter-spacing: 8px;
   text-transform: uppercase;
@@ -196,8 +200,6 @@ p {
     grid-template-columns: 1fr 1fr;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
     
   }
@@ -284,9 +286,6 @@ p {
     
   }
 
-  .middle button:hover {
-    filter: brightness(220%);
-  }
 
   /* More Info */
   .more-info {
