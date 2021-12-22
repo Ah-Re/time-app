@@ -86,7 +86,7 @@ let windowSize = useWindowWidth();
         country_code: res.data.country_code
       })
   
-      const res2 = await axios.get('http://worldtimeapi.org/api/ip/' + locationData.ip);
+      const res2 = await axios.get('https://worldtimeapi.org/api/ip/' + locationData.ip);
       console.log(res2.data);
       let dateTime = res2.data.datetime;
       let part = dateTime.substring(dateTime.indexOf('T') + 1, dateTime.indexOf('T') + 6);
